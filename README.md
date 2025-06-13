@@ -61,7 +61,7 @@ Node_express_mongoDB_Jonas/
 ## 🚀 Getting Started
 
 ```bash
-git clone https://github.com/sourav-kumar-357/Node_express_mongoDB_Jonas.git
+git clone https://github.com/asif-nawaz01/Node_express_mongoDB_Jonas.git
 cd Node_express_mongoDB_Jonas
 npm install
 cp config.env.example config.env  # Add your env variables
@@ -101,21 +101,22 @@ JWT_EXPIRES_IN=90d
 
 ## 📍 Progress Tracker
 
-| Module | Topic | Status |
-|--------|-------|--------|
-| 01 | Node.js Basics | ✅ Completed |
-| 02 | Express Setup | ✅ Completed |
-| 03 | Natours API Project | ⏳ In Progress |
-| 04 | Authentication | 🔜 Upcoming |
-| 05+ | Advanced Topics | 🔜 Upcoming |
+| Module | Topic               | Status         |
+| ------ | ------------------- | -------------- |
+| 01     | Node.js Basics      | ✅ Completed   |
+| 02     | Express Setup       | ✅ Completed   |
+| 03     | Natours API Project | ⏳ In Progress |
+| 04     | Authentication      | 🔜 Upcoming    |
+| 05+    | Advanced Topics     | 🔜 Upcoming    |
 
 ---
 
 ## 🙋‍♂️ Author
 
-**Asif Nawaz**  
-- [LinkedIn](https://www.linkedin.com/in/asif-nawaz-4741b6329)  
-- [GitHub](https://github.com/asif-nawaz01)  
+**Asif Nawaz**
+
+- [LinkedIn](https://www.linkedin.com/in/asif-nawaz-4741b6329)
+- [GitHub](https://github.com/asif-nawaz01)
 - 📧 asifnawaz51111@gmail.com
 
 ---
