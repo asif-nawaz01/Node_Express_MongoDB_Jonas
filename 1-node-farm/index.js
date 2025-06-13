@@ -35,7 +35,9 @@ const url = require('url');
 
 ////////////////////////////////////////////////////////
 //SERVER
-
+const tempOverview = fs.readFileSync(`${__dirname}/templates/template-overview.html`, 'utf-8');
+const tempCard = fs.readFileSync(`${__dirname}/templates/template-card.html`, 'utf-8');
+const tempProduct = fs.readFileSync(`${__dirname}/templates/template-product.html`, 'utf-8');
 
 const data = fs.readFileSync(`${__dirname}/dev-data/data.json`, 'utf-8');
  const dataObj = JSON.parse(data);
@@ -44,12 +46,19 @@ const data = fs.readFileSync(`${__dirname}/dev-data/data.json`, 'utf-8');
 const server = http.createServer((req, res) => {
    const pathName = req.url;
 
+    //Overview page
    if (pathName === '/' || pathName === '/overview') {
-       res.end('This is the OVERVIEW');
+   res.writeHead(200, { 'Content-type': 'text/html' });
+
+   const cardsHtml = dataObj.map(el => replaceTemplate(tempCard, el)).join('');
+   res.end(replaceTemplate(tempOverview, { product: cardsHtml }));
+
+//Product page
    }else if (pathName === '/product') {
        res.end('This is the PRODUCT');
-   }else if (pathName === '/api') {
 
+//API
+   }else if (pathName === '/api') {
 fs.readFile(`${__dirname}/dev-data/data.json`, 'utf-8', (err, data) => {
     const productData = JSON.parse(data);
     console.log(productData);
